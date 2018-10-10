@@ -13,6 +13,7 @@
         -webkit-transition-duration: 4s;
         text-shadow: none;
       }
+        .wrapper{max-width: 100%;text-align: center;}
       body.blurry {
         -moz-transition-property: text-shadow;
         -moz-transition-duration: 4s;
@@ -23,45 +24,44 @@
       a {
         color: #55aaff;
       }
-      .textColumn, .linksColumn {
-        padding: 2em;
-      }
       .textColumn {
-        position: absolute;
-        top: 0px;
-        right: 50%;
-        bottom: 0px;
-        left: 0px;
-
-        text-align: right;
-        padding-top: 11em;
-        background-color: #Magenta;
+        padding: 2em 0 0;
+          
+      }
+     .linksColumn {
+        padding: 0 2em 0 0
+          
+      }
+        maincnt{background: #fff;text-align: center;}
+      .textColumn {
+       
 
       }
+        .textColumn figure img{width: 100%;}
       .textColumn p {
-        width: 75%;
-        float:right;
+        width: 100%;
+        float:none;
+          color: #000;
       }
       .linksColumn {
-        position: absolute;
-        top:0px;
-        right: 0px;
-        bottom: 0px;
-        left: 50%;
+       
 
-        background-color: #Magenta;
+        background-color: #green
       }
 
       h1 {
         color: #33342D;
-        font-size: 500%;
+        font-size: 255%;
         font-weight: normal;
         margin-bottom: 0em;
+          
+        
       }
       h2 {
         font-size: 200%;
         font-weight: normal;
         margin-bottom: 0em;
+          color: #000;
       }
       ul {
         padding-left: 1em;
@@ -73,8 +73,13 @@
     </style>
   </head>
   <body>
+      <div class="wrapper">
+          <div class="maincnt">
     <div class="textColumn">
-      <h1>Congrats SHEIK SUBHAN </h1>
+        
+        
+        <figure><img src="images/Koala.jpg" alt="A funny Koala sitting on the grass."></figure>
+      <h1>Congratulations</h1>
       <p>Your first AWS Elastic Beanstalk Node.js application is now running on your own dedicated environment in the AWS Cloud</p>
     </div>
     <div class="linksColumn">
@@ -82,13 +87,15 @@
       <ul>
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">AWS Elastic Beanstalk overview</a></li>
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html">AWS Elastic Beanstalk concepts</a></li>
-       <figure><img src="images/Koala.jpg" width="100" height="80" alt="A funny Koala sitting on the grass."></figure>
-         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html">Deploy an Express Application to AWS Elastic Beanstalk</a></li>
+        
+        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html">Deploy an Express Application to AWS Elastic Beanstalk</a></li>
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express_elasticache.html">Deploy an Express Application with Amazon ElastiCache to AWS Elastic Beanstalk</a></li>
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_geddy_elasticache.html">Deploy a Geddy Application with Amazon ElastiCache to AWS Elastic Beanstalk </a></li>
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_custom_container.html">Customizing and Configuring a Node.js Container </a></li>
         <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.loggingS3.title.html">Working with Logs</a></li>
       </ul>
     </div>
+          </div>
+      </div>
   </body>
 </html>
